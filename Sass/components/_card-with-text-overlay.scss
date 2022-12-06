@@ -1,0 +1,15 @@
+item > .label{
+    position: absolute;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        bottom: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        letter-spacing: 0.03em;
+        padding-top: 28px;
+        padding-bottom: 27px;
+        color: $white-color;
+        background-color: $jobs-label-background-color;
+}

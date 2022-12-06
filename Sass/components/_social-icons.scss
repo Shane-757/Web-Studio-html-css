@@ -1,0 +1,26 @@
+.team__item-socials-list{
+    display: flex;
+    justify-content: center;
+    &:not(:last-child) {
+    margin-right: 10px
+}}
+
+.team__item-socials-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $link-color;
+    transition: color $time $time-function;
+    &:hover,
+    &:focus {
+    color: $white-color;
+    background-color: $accent-color;
+    }
+}
+
+.team__item-socials-link-icon {
+    fill: currentColor;
+}

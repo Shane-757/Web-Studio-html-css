@@ -1,0 +1,51 @@
+@use '../utils/variable';
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+.features__title{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.features__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features__item {
+    width: 270px;
+    &:not(:last-child){
+    margin-right: 30px;
+}}
+
+.features__image{
+    width: 270px;
+    height: 120px;
+    background: map-get(variable.$colors, 'image-background');
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+.features__item-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: map-get(variable.$colors, 'primary-title-color');
+    margin-bottom: 10px;
+}
+.features__item-text{
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+}

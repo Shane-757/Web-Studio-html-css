@@ -1,0 +1,22 @@
+button {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: $modal-icon;
+    cursor: pointer;
+    background: $portfolio-background-color;
+    padding: 6px 26px;
+    border-style: none;
+    border-radius: 4px;
+    transition: color $time $time-function,
+        background-color $time $time-function;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        color: $white-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}

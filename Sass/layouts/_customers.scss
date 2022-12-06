@@ -1,0 +1,40 @@
+@use '../utils/variable';
+.customer{
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+.customer__title{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    color: map-get(variable.$colors, 'primary-title-color');
+    text-align: center;
+    margin-bottom: 50px;
+}
+.customer__list{
+    display: flex;
+    justify-content: center;
+}
+.customer__item:not(:last-child){
+    margin-right: 30px;
+}
+.customer__link {
+    border: 1px solid map-get(variable.$colors, 'link-color');
+    border-radius: 4px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: map-get(variable.$colors, 'link-color');
+    transition: color variable.$time variable.$time-function;
+    &:hover,
+    &:focus {
+    border: 1px solid map-get(variable.$colors, 'accent-color');
+    color: map-get(variable.$colors, 'accent-color');
+}}
+
+.customer__link-icon {
+    fill: currentColor;
+}
+}

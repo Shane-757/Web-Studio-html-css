@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css"> 
+    <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body class="conatiner">
+<header class="header">
+    <div class="container header__container">
+        <nav class="header__navigation">
+            <a class="header__logo" href="./index.html">WebStudio</a>
+            <ul class="header__list-link">
+                <li class="header__item"><a class="header__link" href="./index.html">Studio</a></li>
+                <li class="header__item"><a class="header__link current" href="./portfolio.html">Portfolio</a></li>
+                <li class="header__item"><a class="header__link" href="#">Contacts</a></li>
+            </ul>
+        </nav>
+        <ul class="header__list-contact">
+            <li class="header__item-contact">
+                <a class="header__item-contact-link" href="mailto:info@devstudio.com">
+                    <svg class="header__item-contact-icon" width="16px" height="12px">
+                        <use href="images\sprite.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com
+                </a>
+            </li>
+            <li class="header__item-contact">
+                <a class="header__item-contact-link" href="tel:380961111111">
+                    <svg class="header__item-contact-icon" width="10px" height="16px">
+                        <use href="images\sprite.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+    <main>
+        <section class="portfolio">
+            <div class="container">
+            <ul class="portfolio__filters-list">
+                <li class="portfolio__filters-item">
+                    <button class="portfolio__navigation-button" type="button">All</button></li>
+                <li class="portfolio__filters-item">
+                    <button class="portfolio__navigation-button" type="button">Web-sites</button></li>
+                <li class="portfolio__filters-item">
+                    <button class="portfolio__navigation-button" type="button">Apps</button></li>
+                <li class="portfolio__filters-item">
+                    <button class="portfolio__navigation-button" type="button">Design</button></li>
+                <li class="portfolio__filters-item">
+                    <button class="portfolio__navigation-button" type="button">Marketing</button></li>
+            </ul>
+            <ul class="portfolio__list">                
+                    <li class="portfolio__list-item">
+                        <div class="card-overlay">
+                            <img class="portfolio__item-img" src="images/portfolio-images/technoduck.jpg" alt="laptop with 3 pictures" width="370" height="294">                   
+                                <p class="card-overlay-text">TEST</p>
+                        </div>
+                        <div class="portfolio__description">                      
+                        <h3 class="portfolio__list-header">Technoduck</h3>
+                        <p class="portfolio__list-text">Web-site</p>                                          
+                    </div>
+                    </li>
+                    <li class="portfolio__list-item">
+                        <div class="card-overlay">
+                            <img class="portfolio__item-img" src="images/portfolio-images/poster.jpg" alt="basketball-poster" width="370" height="294">
+                                <p class="card-overlay-text">TEST</p>
+                        </div>
+                        <div class="portfolio__description">
+                        <h3 class="portfolio__list-header">Poster New Orlean vs Golden Star</h3>
+                        <p class="portfolio__list-text">Design</p>                        
+                        </div>
+                    </li> 
+                    <li class="portfolio__list-item">
+                        <div class="card-overlay">
+                            <img class="portfolio__item-img" src="images/portfolio-images/restraurant.jpg" alt="seafood-restaurant-logo" width="370" height="294">
+                                <p class="card-overlay-text">TEST</p>
+                        </div>
+                        <div class="portfolio__description">
+                        <h3 class="portfolio__list-header">Seafood Restaurant</h3>
+                        <p class="portfolio__list-text">Apps</p>                      
+                        </div>
+                    </li> 
+                    <li class="portfolio__list-item">
+                        <div class="card-overlay">
+                            <img class="portfolio__item-img" src="images/portfolio-images/headphones.jpg" alt="headphones" width="370" height="294"> 
+                                <p class="card-overlay-text">TEST</p>
+                        </div>
+                        <div class="portfolio__description">
+                        <h3 class="portfolio__list-header">Project Prime</h3>
+                        <p class="portfolio__list-text">Marketing</p>                       
+                        </div>
+                    </li> 
+                    <li class="portfolio__list-item">
+                        <div class="card-overlay">
+                            <img class="portfolio__item-img" src="images/portfolio-images/boxes.jpg" alt="white-and-brown-box" width="370" height="294">
+                                <p class="card-overlay-text">TEST</p>
+                        </div>
+                        <div class="portfolio__description">
+                        <h3 class="portfolio__list-header">Project Boxes</h3>
+                        <p class="portfolio__list-text">Apps</p>                     
+                        </div>
+                    </li> 
+                    <li class="portfolio__list-item">
+                        <div class="card-overlay">
+                            <img class="portfolio__item-img" src="images/portfolio-images/desktop.jpg" alt="desktop" width="370" height="294"> 
+                                <p class="card-overlay-text">TEST</p>
+                        </div>
+                        <div class="portfolio__description">
+                        <h3 class="portfolio__list-header">Inspiration has no Borders</h3>
+                        <p class="portfolio__list-text">Web-site</p>                       
+                        </div>
+                    </li> 
+                    <li class="portfolio__list-item">
+                        <div class="card-overlay">
+                            <img class="portfolio__item-img" src="images/portfolio-images/magazine.jpg" alt="open-magazine" width="370" height="294"> 
+                                <p class="card-overlay-text">TEST</p>
+                        </div>
+                        <div class="portfolio__description">
+                        <h3 class="portfolio__list-header">Limited Edition</h3>
+                        <p class="portfolio__list-text">Design</p>                      
+                        </div>
+                    </li> 
+                    <li class="portfolio__list-item">
+                        <div class="card-overlay">
+                            <img class="portfolio__item-img" src="images/portfolio-images/tag.jpg" alt="label-tag" width="370" height="294"> 
+                                <p class="card-overlay-text">TEST</p>
+                        </div>
+                        <div class="portfolio__description">
+                        <h3 class="portfolio__list-header">Project LAB</h3>
+                        <p class="portfolio__list-text">Marketing</p>                      
+                        </div>
+                    </li> 
+                    <li class="portfolio__list-item">
+                        <div class="card-overlay">
+                            <img class="portfolio__item-img" src="images/portfolio-images/laptop.jpg" alt="laptop" width="370" height="294"> 
+                                <p class="card-overlay-text">TEST</p>
+                        </div>
+                        <div class="portfolio__description">
+                        <h3 class="portfolio__list-header">Growing Business</h3>
+                        <p class="portfolio__list-text">Apps</p>                     
+                        </div>
+                    </li>                
+            </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__left">
+                <a class="footer__logo" href="./index.html">WebStudio</a>
+                <address class="footer__address">
+                    <a class="footer__location" href="https://goo.gl/maps/39EHeSABdAvS7GECA" target="_blank">695 Park Ave,
+                        New York, NY 10065,<br> United States</a>
+                    <ul class="footer__list-contact">
+                        <li class="footer__item"><a class="footer__item-link"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer__item"><a class="footer__item-link" href="tel:380961111111">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+            <div class="footer__middle">
+                <h3 class="footer__middle-title"> FIND US ON</h3>
+                <ul class="footer__social-media">
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="#">
+                            <svg class="footer__socials-link-icon" width="20px" height="20px">
+                                <use href="images/sprite.svg#icon-instagram-footer"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="#">
+                            <svg class="footer__socials-link-icon" width="20px" height="20px">
+                                <use href="images/sprite.svg#icon-twitter-footer"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="#">
+                            <svg class="footer__socials-link-icon" width="20px" height="20px">
+                                <use href="images/sprite.svg#icon-facebook-footer"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="footer__socials-item">
+                        <a class="footer__socials-link" href="#">
+                            <svg class="footer__socials-link-icon" width="20px" height="20px">
+                                <use href="images/sprite.svg#icon-linkedin-footer"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__right">
+                <h3 class="footer__input-title">SUBSCRIBE TO THE NEWSLETTER</h3>
+                <form action="#" class="footer__form">
+                    <label class="footer__form-label">
+                        <input class="footer__input" type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button class="footer__button" type="submit">
+                        Subscribe
+                        <svg class="send-icon" width="24px" height="24px">
+                            <use href="images\sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+</body>
+</html>

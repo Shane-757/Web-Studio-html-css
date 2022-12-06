@@ -1,0 +1,38 @@
+@use '../utils/variable';
+.job{
+    padding-bottom: 94px;
+
+.job__title{
+    font-weight: 700;
+        font-size: 36px;
+        line-height: 1.16;
+        color: map-get(variable.$colors, 'primary-title-color');
+        text-align: center;
+        margin-bottom: 50px;
+}
+.job__list{
+    display: flex;
+}
+.job__item {
+    position: relative;
+    &:not(:last-child){
+    margin-right: 30px;
+}}
+
+
+.job__item > .label{
+    position: absolute;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(16/14);
+        bottom: 0;
+        right: 0;
+        left: 0;
+        text-align: center;
+        letter-spacing: 0.03em;
+        padding-top: 28px;
+        padding-bottom: 27px;
+        color: map-get(variable.$colors, 'white-color');
+        background-color: map-get(variable.$colors, 'jobs-label-background-color');
+}
+}

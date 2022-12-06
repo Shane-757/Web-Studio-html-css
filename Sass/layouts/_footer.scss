@@ -1,0 +1,142 @@
+@use '../utils/variable';
+.footer{
+    background-color: map-get(variable.$colors, 'background');
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+.footer__logo{
+    font-weight: 700;
+    font-size: 26px;
+    font-family: Raleway;
+    color: map-get(variable.$colors, 'accent-color');
+    line-height: 1.19;
+     margin-bottom: 9px;
+    display: block;
+}
+.footer__location{
+    font-size: 14px;
+    line-height: 1.71;
+    text-decoration: none;
+    font-style: normal;
+    color: map-get(variable.$colors, 'white-color');
+    margin-bottom: 2px;
+    display: block;
+    transition: color variable.$time variable.$time-function;
+    &:hover,
+    &:hover {
+    color: map-get(variable.$colors, 'accent-color');
+}}
+
+.footer__item:not(:last-child) {
+    margin-bottom: 2px;
+}
+.footer__item-link{
+    font-size: 14px;
+    color: map-get(variable.$colors, 'white-color');
+    opacity: .6;
+    line-height: 1.71;
+    text-decoration: none;
+    font-style: normal;
+    transition: color variable.$time variable.$time-function;
+    &:hover,
+    &:focus {
+    color: map-get(variable.$colors, 'accent-color');
+}}
+
+.footer__middle-title{
+    font-size: 14px;
+    line-height: 1.14;
+    font-weight: 700;
+    font-family: Roboto;
+    color: map-get(variable.$colors, 'white-color');
+    margin-bottom: 20px;
+}
+.footer__container{
+    display: flex;
+    align-items: baseline;
+}
+.footer__left{
+    margin-right: 70px;
+}
+.footer__middle{
+    margin-right: 93px;
+}
+.footer__social-media{
+    display: flex;
+}
+.footer__socials-link{
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: map-get(variable.$colors, 'footer-social-link-background');
+    transition: color variable.$time variable.$time-function;
+    &:hover,
+    &:focus{
+    background-color: map-get(variable.$colors, 'accent-color');
+}}
+
+.footer__socials-link-icon {
+    cursor: pointer;
+}
+
+.footer__form {
+    display: flex;
+}
+
+.footer__form-label {
+    margin-right: 12px;
+}
+
+.footer__input-title {
+    font-size: 14px;
+    line-height: calc(16/14);
+    color: map-get(variable.$colors, 'white-color');
+    margin-bottom: 20px;
+
+}
+
+.footer__input {
+    padding: 15px;
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: none;
+    transition: color variable.$time variable.$time-function;
+    transition: background-color variable.$time variable.$time-function;
+    transition: border-color variable.$time variable.$time-function;
+    &:hover,
+    &:focus {
+    color: map-get(variable.$colors, 'white-color');
+    background-color: transparent;
+    border-color: map-get(variable.$colors, 'white-color');
+}}
+
+&__button {
+    border: none;
+    padding: 10px 28px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:map-get(variable.$colors, 'accent-color');
+    color: map-get(variable.$colors, 'white-color');
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Roboto';
+    transition: background-color variable.$time variable.$time-function;
+    &:hover
+    &:focus {
+    background-color: map-get(variable.$colors, 'button-hover');
+}}
+
+.send-icon {
+    margin-left: 30px;
+}
+}

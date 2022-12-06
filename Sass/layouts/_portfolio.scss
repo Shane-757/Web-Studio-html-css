@@ -1,0 +1,96 @@
+@use '../utils/variable';
+.card-overlay {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-overlay-text {
+    color: map-get(variable.$colors, 'white-color');
+    background-color: map-get(variable.$colors, 'portfolio-card-overlay');
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform variable.$time variable.$time-function;
+}
+.portfolio{
+    padding-bottom: 94px;
+        padding-top: 94px;
+
+.portfolio__navigation-button{
+    font-family: Roboto;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+        text-align: center;
+        color: map-get(variable.$colors, 'modal-icon');
+        cursor: pointer;
+        background: map-get(variable.$colors, 'portfolio-background-color');
+        padding: 6px 26px;
+        border-style: none;
+        border-radius: 4px;
+        transition: color variable.$time variable.$time-function,
+        background-color variable.$time variable.$time-function;
+        &:hover,
+        &:focus {
+        background-color: map-get(variable.$colors, 'accent-color');
+        color: map-get(variable.$colors, 'white-color');
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}}
+
+.portfolio__filters-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.portfolio__list{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * map-get(variable.$colors, 'portfolio-card-gap'));
+    margin-left: calc(-1 * map-get(variable.$colors, 'portfolio-card-gap'));
+}
+.portfolio__filters-item:not(:last-child) {
+    margin-right: 8px;
+    transition: color variable.$time variable.$time-function;
+}
+
+.portfolio__list-item{
+    flex-basis: calc(100%/3 - map-get(variable.$colors, 'portfolio-card-gap'));
+    margin-left: map-get(variable.$colors, 'portfolio-card-gap');
+    margin-top: map-get(variable.$colors, 'portfolio-card-gap');
+    &:hover,
+    &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    &:hover .card-overlay-text,
+    &:focus .card-overlay-text {
+    transform: translateY(0%);
+    cursor: pointer;
+        }}}
+
+.portfolio__description{
+    border-bottom: 1px solid map-get(variable.$colors, 'portfolio-background-color');
+    border-left: 1px solid map-get(variable.$colors, 'portfolio-background-color');
+    border-right: 1px solid map-get(variable.$colors, 'portfolio-background-color');
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 24px;
+    padding-left: 24px;
+    }
+.portfolio__list-header{
+    font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        color: map-get(variable.$colors, 'primary-title-color');
+}
+.portfolio__list-text {
+    font-size: 16px;
+    line-height: 1.87;
+}
+}
