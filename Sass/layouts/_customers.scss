@@ -1,7 +1,7 @@
 @use '../utils/variable';
 .customer{
     padding-top: 94px;
-    padding-bottom: 94px;
+    padding-bottom: 94px;}
 
 .customer__title{
     font-weight: 700;
@@ -37,4 +37,10 @@
 .customer__link-icon {
     fill: currentColor;
 }
+
+@media (min-width:768px) and (max-width:1200px) {
+    .customer__item{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

@@ -92,17 +92,23 @@
         fill: currentColor;
     }
 
-@media (min-width:480px) and (max-width:768px) {
-    .header__item-contact {
+@media (min-width:768px) and (max-width:1200px) {
+    .header__list-contact {
     flex-direction: column;
-    margin-top: 21px;
-    padding-bottom: 10px;
+    margin: 21px;
+   
     }
-}
-@media (min-width:480px) and (max-width:768px){
+    .header__item-contact-link{
+        padding: 10px;
+        font-size: 12px;
+    }
 .header__logo {
     font-size: 24px;
     line-height: 1.16;
     margin-right: 88px;
 }
+.header__list-link{
+    margin-right: 93px;
 }
+}
+

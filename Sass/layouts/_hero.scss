@@ -2,12 +2,14 @@
 .hero{
     background-color: map-get(variable.$colors, 'background');
     padding-top: 200px;
-     padding-bottom: 200px;
-     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-     rgba(47, 48, 58, 0.4)), url(../images/home-page-images/hero-background.jpg);
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)), url(../images/home-page-images/hero-background.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
 
 .hero__container{
     display: flex;
@@ -17,13 +19,13 @@
 }
 .hero__title{
     text-align: center;
-        letter-spacing: 0.06em;
-        font-weight: 900;
-        font-size: 44px;
-        line-height: 1.36;
-        color: map-get(variable.$colors, 'white-color');
-        width: 696px;
-        margin-bottom: 30px;
+    letter-spacing: 0.06em;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    color: map-get(variable.$colors, 'white-color');
+    width: 696px;
+    margin-bottom: 30px;
 }
 .hero__button{
     font-family: Roboto;
@@ -45,4 +47,12 @@
     background-color: map-get(variable.$colors, 'button-hover');
 }}
 
+
+@media  screen and (max-width: 768px) {
+    .hero__title{
+        font-size: 26px;
+        line-height: 1.61;
+        width: 360px;
+    }
+    
 }

@@ -94,3 +94,9 @@
     line-height: 1.87;
 }
 }
+@media screen and (max-width:768px) {
+    .portfolio__list {
+        flex-direction: column;
+    }
+
+}

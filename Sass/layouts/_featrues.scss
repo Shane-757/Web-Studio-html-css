@@ -2,6 +2,7 @@
 .features {
     padding-top: 94px;
     padding-bottom: 94px;
+}
 
 .features__title{
     position: absolute;
@@ -47,5 +48,26 @@
     font-size: 14px;
     line-height: 1.71;
 }
+@media screen and (min-width:768px) and (max-width: 1200px){
+    .features {
+            display: flex;
+            flex-wrap: wrap;
+        }
+}
 
+@media screen and (max-width:768px) {
+
+    .features__list {
+        flex-direction: column;
+    }
+    .features__image {
+            width: 420px;
+        }
+    .features__item{
+        margin-bottom: 30px;
+    }
+    .features__item-title{
+        text-align: center;
+    }
+    
 }

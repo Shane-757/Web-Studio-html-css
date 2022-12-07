@@ -2,7 +2,7 @@
 .team{
     background: map-get(variable.$colors, 'image-background');
         padding-top: 94px;
-        padding-bottom: 94px;
+        padding-bottom: 94px;}
 .team__title{
     font-weight: 700;
         font-size: 36px;
@@ -66,4 +66,18 @@
 .team__item-socials-link-icon {
     fill: currentColor;
 }
+
+@media (min-width:768px) and (max-width:1200px) {
+    .team__list{
+        flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 768px) {
+    .team__list {
+        flex-direction: column;
+    }
+    .team__item {
+        margin-bottom: 30px;
+        margin-right: 0px;
+    }
 }

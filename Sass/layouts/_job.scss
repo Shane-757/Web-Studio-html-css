@@ -36,3 +36,8 @@
         background-color: map-get(variable.$colors, 'jobs-label-background-color');
 }
 }
+@media (max-width:1200px) {
+    .job {
+        display: none;
+    }
+}

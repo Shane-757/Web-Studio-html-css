@@ -1,17 +1,17 @@
 
-@media (max-width:480px) {
+@media (max-width:768px) {
     .container {
         min-width: 320px;
-        max-width: 1170px;
+        max-width: 768px;
         padding-left: 15px;
         padding-right: 15px;
     }
 }
 
-@media (min-width:480px) and (max-width:768px){
+@media (min-width:768px) and (max-width:1200px){
     .container{
-        min-width: 320px;
-        max-width: 1170px;
+        min-width: 768px;
+        max-width: 1200px;
         padding-left: 15px;
         padding-right: 15px;
     }
