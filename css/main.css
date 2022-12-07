@@ -477,8 +477,7 @@ img {
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
-  .customer__item {
-    display: flex;
+  .customer__list {
     flex-wrap: wrap;
   }
 }
