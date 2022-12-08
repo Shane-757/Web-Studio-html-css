@@ -93,6 +93,12 @@
     font-size: 16px;
     line-height: 1.87;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .portfolio__list-item {
+            flex-basis: calc(100%/2 - map-get(variable.$colors, 'portfolio-card-gap'));
+}}
+
 }
 @media screen and (max-width:768px) {
     .portfolio__list {

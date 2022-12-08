@@ -1,26 +1,25 @@
 
-@media (max-width:768px) {
-    .container {
-        min-width: 320px;
-        max-width: 768px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
-
-@media (min-width:768px) and (max-width:1200px){
-    .container{
-        min-width: 768px;
-        max-width: 1200px;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-}
 .container {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
+
+@media (min-width:768px) and (max-width:1200px) {
+    .container {
+        width: 768px;
+    }
+}
+
+
+@media (max-width:767px) {
+    .container {
+        min-width: 320px;
+        max-width: 768px;
+    }
+}
+
+
 
 

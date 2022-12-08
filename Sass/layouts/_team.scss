@@ -70,14 +70,21 @@
 @media (min-width:768px) and (max-width:1200px) {
     .team__list{
         flex-wrap: wrap;
+        .team__item {
+                margin-right: 30px;
+                margin-bottom: 30px;
+            }
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
+    .team{
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }}
+
+
+@media screen and (max-width: 767px) {
     .team__list {
         flex-direction: column;
-    }
-    .team__item {
-        margin-bottom: 30px;
-        margin-right: 0px;
     }
 }

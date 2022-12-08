@@ -95,7 +95,8 @@
 @media (min-width:768px) and (max-width:1200px) {
     .header__list-contact {
     flex-direction: column;
-    margin: 21px;
+    margin-top: 21px;
+    margin-bottom: 21px;
    
     }
     .header__item-contact-link{
@@ -109,6 +110,9 @@
 }
 .header__list-link{
     margin-right: 93px;
+}
+.header__item-contact:not(:last-child){
+    margin-right: 0px;
 }
 }
 

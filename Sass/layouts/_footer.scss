@@ -2,7 +2,7 @@
 .footer{
     background-color: map-get(variable.$colors, 'background');
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 60px;}
 
 .footer__logo{
     font-weight: 700;
@@ -118,7 +118,7 @@
     border-color: map-get(variable.$colors, 'white-color');
 }}
 
-&__button {
+.footer__button {
     border: none;
     padding: 10px 28px;
     border-radius: 4px;
@@ -130,6 +130,8 @@
     font-size: 16px;
     cursor: pointer;
     font-family: 'Roboto';
+    width: 200px;
+    height: 50px;
     transition: background-color variable.$time variable.$time-function;
     &:hover
     &:focus {
@@ -139,4 +141,34 @@
 .send-icon {
     margin-left: 30px;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+    .footer__container{
+        flex-wrap: wrap;
+    }
+    .footer__input-title{
+        text-align: center;
+    }
+    .footer__left{
+        text-align: center;
+        margin-right: 0px;
+        margin-left: 76px;
+    }
+    .footer__middle{
+        margin-right: 0px;
+        margin-left: 165px;
+        text-align: center;
+    }
+    .footer__right{
+        margin-left: 162px;
+        margin-top: 50px;
+    }
+    .footer__form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__button{
+        margin-top: 20px;
+    }
 }
