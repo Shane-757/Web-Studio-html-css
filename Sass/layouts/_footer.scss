@@ -172,3 +172,40 @@
         margin-top: 20px;
     }
 }
+@media screen and (max-width:767px) {
+    .footer__logo{
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+    .footer__container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer__middle-title{
+        margin-top: 48px;
+    }
+
+    .footer__input-title{
+        align-items: center;
+        text-align: center;
+        margin-top: 60px;
+    }
+    .footer__form{
+        display: block;
+    }
+    .footer__left{
+        margin: 0px;
+    }
+    .footer__middle{
+        margin: 0px;
+    }
+    .footer__right{
+        align-items: center;
+    }
+    .footer__button{
+            margin: auto;
+            margin-top: 20px;
+    }
+}
