@@ -22,7 +22,7 @@
 .portfolio{
     padding-bottom: 94px;
         padding-top: 94px;
-
+}
 .portfolio__navigation-button{
     font-family: Roboto;
         font-weight: 500;
@@ -99,10 +99,24 @@
             flex-basis: calc(100%/2 - map-get(variable.$colors, 'portfolio-card-gap'));
 }}
 
-}
-@media screen and (max-width:768px) {
+
+@media screen and (max-width:767px) {
     .portfolio__list {
         flex-direction: column;
+    }
+    .portfolio__filters-list{
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-bottom: 40px;
+    }
+    .portfolio__navigation-button{
+        margin-right: 6px;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (max-width:1200px) {
+    .portfolio__description{
+        padding-right: 0px;
     }
 
 }

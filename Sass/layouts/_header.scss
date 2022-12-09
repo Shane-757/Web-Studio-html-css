@@ -1,4 +1,5 @@
 @use '../utils/variable';
+
 .header {
     background: map-get(variable.$colors, 'header-background');
     border-bottom: 1px solid #ECECEC;
@@ -114,7 +115,9 @@
 .header__item-contact:not(:last-child){
     margin-right: 0px;
 }
-
+}
+@media screen and (max-width:767px){
+    .header__logo{ margin: 0;}
 }
 
     
