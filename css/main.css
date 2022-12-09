@@ -7,7 +7,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .container {
-    width: 768px;
+    width: 800px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -169,9 +169,6 @@ img {
   }
   .header__item-contact:not(:last-child) {
     margin-right: 0px;
-  }
-  .header__navigation {
-    margin-right: 93px;
   }
 }
 .hero {
@@ -882,6 +879,9 @@ img {
   .footer__button {
     margin: auto;
     margin-top: 20px;
+  }
+  .footer__item:not(:last-child) {
+    margin-bottom: 8px;
   }
 }
 .backdrop {

@@ -208,4 +208,7 @@
             margin: auto;
             margin-top: 20px;
     }
+        .footer__item:not(:last-child){
+            margin-bottom: 8px;
+        }
 }
