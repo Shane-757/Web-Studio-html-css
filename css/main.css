@@ -190,11 +190,6 @@ img {
     margin: 0;
   }
 }
-.header__container {
-  margin: 0;
-  width: 100vw;
-}
-
 .hero {
   background-color: #2F303A;
   padding-top: 200px;
@@ -566,6 +561,7 @@ img {
 
 .customer__item:not(:last-child) {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .customer__link {
@@ -604,7 +600,7 @@ img {
     padding-bottom: 60px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 479px) and (max-width: 767px) {
   .customer__list {
     flex-wrap: wrap;
     align-items: center;
@@ -623,23 +619,29 @@ img {
   }
 }
 @media (min-width: 320px) and (max-width: 479px) {
-  .customer__item {
-    width: 210px;
+  .customer__list {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
-  .customer__item:nth-child(odd) {
+  .customer__item {
+    width: 127px;
+  }
+  .customer__item:nth-child(even) {
     margin-right: 10px;
   }
   .customer__link-icon {
-    width: 210px;
+    width: 127px;
+  }
+  .customer__link {
+    width: auto;
+  }
+  .customer__title {
+    font-size: 28px;
   }
 }
-@media screen and (max-width: 460px) {
-  .customer__item:nth-child(odd) {
+@media (min-width: 320px) and (max-width: 324px) {
+  .customer__item:nth-child(even) {
     margin-right: 0px;
-  }
-  .customer__list {
-    flex-direction: column;
-    align-items: center;
   }
 }
 .card-overlay {
@@ -1118,7 +1120,7 @@ img {
 
 .modal__icon {
   position: absolute;
-  top: 52%;
+  top: 55%;
   margin-left: 12px;
   margin-bottom: 11px;
   fill: black;
