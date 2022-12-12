@@ -627,10 +627,15 @@ img {
     width: 210px;
   }
   .customer__item:nth-child(odd) {
-    margin-right: 0px;
+    margin-right: 10px;
   }
   .customer__link-icon {
     width: 210px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .customer__item:nth-child(odd) {
+    margin-right: 0px;
   }
   .customer__list {
     flex-direction: column;
@@ -805,6 +810,7 @@ img {
 }
 .footer__location:hover, .footer__location:hover {
   color: #2196F3;
+  text-decoration: underline;
 }
 
 .footer__item:not(:last-child) {
@@ -1177,11 +1183,11 @@ img {
   .modal {
     width: 450px;
   }
-  .modal__form {
-    width: 370px;
-  }
   .modal__caption {
     margin-bottom: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
   }
   .modal__label {
     display: flex;
@@ -1191,18 +1197,19 @@ img {
     width: 370px;
   }
   .form-button {
-    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-left: 80px;
   }
 }
 @media (min-width: 320px) and (max-width: 479px) {
   .modal {
     width: 320px;
   }
-  .modal__form {
-    width: 240px;
-  }
   .modal__caption {
     margin-bottom: 12px;
+    text-align: center;
+    display: flex;
+    align-items: center;
   }
   .modal__label {
     display: flex;
@@ -1212,7 +1219,8 @@ img {
     width: 240px;
   }
   .form-button {
-    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-left: 20px;
   }
 }
 @media screen and (max-width: 767px) {

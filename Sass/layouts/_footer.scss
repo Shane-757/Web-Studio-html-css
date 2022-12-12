@@ -27,6 +27,7 @@
     &:hover,
     &:hover {
     color: map-get(variable.$colors, 'accent-color');
+    text-decoration: underline;
 }}
 
 .footer__item:not(:last-child) {

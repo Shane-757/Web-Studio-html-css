@@ -164,12 +164,13 @@
          width: 450px;
      }
 
-     .modal__form {
-         width: 370px;
-     }
+     
 
      .modal__caption {
          margin-bottom: 12px;
+         text-align: center;
+         display: flex;
+         align-items: center;
      }
 
      .modal__label {
@@ -181,7 +182,8 @@
          width: 370px;
      }
      .form-button{
-        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-left: 80px;
      }
  }
 
@@ -190,12 +192,13 @@
          width: 320px;
      }
 
-     .modal__form {
-         width: 240px;
-     }
+     
 
      .modal__caption {
          margin-bottom: 12px;
+         text-align: center;
+         display: flex;
+         align-items: center;
      }
 
      .modal__label {
@@ -207,6 +210,7 @@
          width: 240px;
      }
      .form-button{
-        margin: 0 auto;
+        margin-bottom: 40px;
+        margin-left: 20px;
      }
  }
