@@ -1,6 +1,6 @@
 @use '../utils/variable';
 
-@media screen and (max-width:768px){
+@media screen and (max-width:767px){
     .header__list-link, .header__list-contact{
         display:none;
     } 
@@ -59,7 +59,7 @@
     outline: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .menu-toggle {
         display: none;
     }
@@ -157,11 +157,9 @@
 }
 .mobile-menu__link {
     list-style-type: none;
-    
 }
-.mobile-contact{
-    margin-top: 302px;
-}
+
+
 .mobile-contact-menu__container .mobile-contact__link:not(:last-child) {
     margin-bottom: 32px;
 }
@@ -193,4 +191,9 @@
 
 .mobile-media__link{
     color:map-get(variable.$colors, 'accent-color');
+}
+.mobile__contacts{
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
 }
