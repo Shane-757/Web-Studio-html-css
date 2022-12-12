@@ -9,17 +9,13 @@
     .mobile__container{ display: none;}}
 
 .mobile__container {
-    min-width: 320px;
+    
     max-width: 1170px;
     padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
-    margin-right: auto;
+   
 }
-
-
-
-
 
 .mobile-menu {
     padding: 0;
@@ -43,7 +39,6 @@
 
 .mobile-menu .link:hover,
 .mobile-menu .link:focus {
-    text-decoration: underline;
     color:map-get(variable.$colors, 'accent-color');
 }
 
@@ -83,14 +78,22 @@
     height: 100%;
     padding: 32px;
     background-color:map-get(variable.$colors, 'white-color');
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba( 0, 0, 0, 0.16);
     z-index: 999;
-
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: none;
 }
 
 .menu-container.is-open {
     transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    display: block;
 }
 
 .menu-container .menu-toggle {
@@ -112,3 +115,67 @@
     color:map-get(variable.$colors, 'primary-title-color');
     text-decoration: none;
 }
+ .mobile-menu__link {
+     display: block;
+     padding: 40px 0 0 32px;
+     font-weight: 500;
+     font-size: 40px;
+     line-height: 47px;
+     letter-spacing: 0.02em;
+     color: map-get(variable.$colors, 'primary-title-color' );
+     text-decoration: none;
+ }
+
+ .mobile-menu__link:hover {
+     color: map-get(variable.$colors, 'accent-color');
+ }
+
+ .mobile-menu__current-page {
+     color: map-get(variable.$colors, 'accent-color');
+        position: relative;
+        text-decoration: none;
+    }
+ .mobile-menu__current-page:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: -1px;
+    left: 0;
+    background-color: #2196f3;
+    border-radius: 2px;
+ }
+.mobile-menu__container{
+        margin-top: 8px;
+            margin-left: 4px;
+}
+.mobile-menu__link:not(:last-child) {
+    margin-bottom: 20px;
+}
+.mobile-menu__link {
+    list-style-type: none;
+    position: relative;
+}
+.mobile-contact{
+    margin-top: 302px;
+}
+.mobile-contact-menu__container .mobile-contact__link:not(:last-child) {
+    margin-bottom: 32px;
+}
+.mobile-media{
+    display: flex;
+        margin-right: 0;
+        margin-bottom: 16px;
+}
+.mobile-media .mobile-media__item:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, .2);}
+
+.mobile-media .mobile-media__item{
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 1.1538461538;
+        letter-spacing: .01em;
+        color: #2196f3;
+        margin-top: 64px;}

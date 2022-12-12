@@ -1,6 +1,7 @@
 @use '../utils/variable';
 .job{
     padding-bottom: 94px;
+    display: flex;
 
 .job__title{
     font-weight: 700;

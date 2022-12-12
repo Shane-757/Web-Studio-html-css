@@ -68,11 +68,20 @@
 
 @media (min-width:768px) and (max-width:1200px) {
     .team__list{
+        min-width: 768px;
         flex-wrap: wrap;}
-        .team__item {
-                margin-bottom: 30px;
-                margin-right: 30px;
+    .team__item {
+            margin-bottom: 30px;
+            
             }
+    .team__item:not(:last-child) {
+        margin-right: 0px;
+                 }
+    .team__item:nth-child(odd){
+        margin-right: 30px;
+    }
+   
+    
     }
 
 @media screen and (max-width: 1200px) {
@@ -85,9 +94,15 @@
 @media screen and (max-width: 767px) {
     .team__list {
         flex-direction: column;
+        align-items: center;
     }
         .team__item:not(:last-child){
         margin-right: 0px;
         margin-bottom: 30px;
     }
 }
+   @media (min-width: 320px) and (max-width: 479px) {
+       .team .team__item:not(:last-child) {
+           margin-bottom: 30px;
+       }
+   }

@@ -96,8 +96,7 @@
 @media (min-width:768px) and (max-width:1200px) {
     .header__list-contact {
     flex-direction: column;
-    margin-top: 21px;
-    margin-bottom: 21px;
+   
    
     }
     .header__item-contact-link{
@@ -119,6 +118,11 @@
 @media screen and (max-width:767px){
     .header__logo{ margin: 0;}
 }
+    .header__container{
+        margin: 0;
+        width: 100vw;
+    }
+
 
     
 

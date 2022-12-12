@@ -101,6 +101,7 @@
 
 
 @media screen and (max-width:767px) {
+
     .portfolio__list {
         flex-direction: column;
     }
@@ -119,4 +120,24 @@
         padding-right: 0px;
     }
 
+}
+
+
+@media screen and (min-width:768px) and (max-width:1200px) {
+    .box {
+        width:354px;
+    }
+}
+
+
+@media screen and (min-width:480px) and (max-width:767px) {
+    .box {
+            width: 450px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .box {
+            width: 100%;
+    }
 }

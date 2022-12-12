@@ -50,7 +50,7 @@
 @media screen and (min-width:768px) and (max-width: 1200px){
     .features__item {
             width: 354px;
-            margin-bottom: 30px;
+            margin: 0 auto 30px auto;
     
             &:nth-child(2n) {
                 margin-left: 30px;
@@ -80,6 +80,7 @@
 
     .features__list {
         flex-direction: column;
+        align-items: center;
     }
     .features__image {
             width: 450px;
@@ -93,3 +94,18 @@
     }
     
 }
+ @media (min-width: 320px) and (max-width: 479px) {
+     .features__item {
+         width: 100%;
+
+         &:not(:last-child) {
+             margin-bottom: 30px;
+         }
+     }
+
+     .features__image {
+
+         padding: 25px calc(100%/2 - 70px);
+         width: 100%;
+     }
+ }
