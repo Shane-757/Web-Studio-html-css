@@ -11,6 +11,8 @@
     .container {
         width: 768px;
         margin: 0 auto;
+        padding-left: 15px;
+            padding-right: 15px;
     }
 }
 
@@ -19,12 +21,17 @@
     .container {
         width: 480px;
         margin: 0 auto;
+        padding-left: 15px;
+            padding-right: 15px;
     }
 }
 @media (min-width: 320px) and (max-width: 479px){
     .container{
         min-width: 320px;
         width: 100%;
+        margin: 0 auto;
+        padding-left: 15px;
+            padding-right: 15px;
     }
 }
 

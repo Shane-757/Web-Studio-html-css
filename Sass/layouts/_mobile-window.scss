@@ -117,7 +117,7 @@
 }
  .mobile-menu__link {
      display: block;
-     padding: 40px 0 0 32px;
+     padding: 40px 0 0 0;
      font-weight: 500;
      font-size: 40px;
      line-height: 47px;
@@ -131,20 +131,19 @@
  }
 
  .mobile-menu__current-page {
+    position: relative;
      color: map-get(variable.$colors, 'accent-color');
-        position: relative;
-        text-decoration: none;
-    }
- .mobile-menu__current-page:after {
+    text-decoration: none;
+ &:after {
     position: absolute;
     content: "";
     width: 100%;
     height: 4px;
     bottom: -1px;
     left: 0;
-    background-color: #2196f3;
+    background-color: map-get(variable.$colors, 'accent-color');
     border-radius: 2px;
- }
+ }}
 .mobile-menu__container{
         margin-top: 8px;
             margin-left: 4px;
@@ -154,7 +153,7 @@
 }
 .mobile-menu__link {
     list-style-type: none;
-    position: relative;
+    
 }
 .mobile-contact{
     margin-top: 302px;
@@ -177,5 +176,17 @@
         font-size: 13px;
         line-height: 1.1538461538;
         letter-spacing: .01em;
-        color: #2196f3;
-        margin-top: 64px;}
+        color: map-get(variable.$colors, 'accent-color');
+        margin-top: 64px;
+    }
+
+.mobile-contact__link-phone{
+    font-size: 34px;
+}
+.mobile-contact__link-email{
+        font-size: 24px;
+    }
+
+.mobile-media__link{
+    color:map-get(variable.$colors, 'accent-color');
+}
