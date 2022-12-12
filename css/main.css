@@ -1347,8 +1347,10 @@ img {
   position: relative;
   color: #2196F3;
   text-decoration: none;
+  display: inline-block;
 }
-.mobile-menu__current-page:after {
+
+.mobile-menu__current-page::after {
   position: absolute;
   content: "";
   width: 100%;
