@@ -13,14 +13,14 @@
         crossorigin=“anonymous” />
     <link rel="stylesheet" href="css/main.min.css">
 </head>
-<body class="conatiner">
+<body>
 <header class="header">
     <div class="container header__container">
         <nav class="header__navigation">
             <a class="header__logo" href="./index.html">WebStudio</a>
             <ul class="header__list-link">
-                <li class="header__item"><a class="header__link" href="./index.html">Studio</a></li>
-                <li class="header__item"><a class="header__link current" href="./portfolio.html">Portfolio</a></li>
+                <li class="header__item"><a class="header__link current" href="./index.html">Studio</a></li>
+                <li class="header__item"><a class="header__link" href="./portfolio.html">Portfolio</a></li>
                 <li class="header__item"><a class="header__link" href="#">Contacts</a></li>
             </ul>
         </nav>
@@ -42,69 +42,71 @@
                 </a>
             </li>
         </ul>
-    </div>
 
-    <div class="mobile__container">
-        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg width="24" height="24">
-                <path fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"></path>
-            </svg>
-        </button>
-    </div>
-    
-    <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu">
-            <svg width="24" height="24">
-                <path fill-rule="evenodd"
-                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-                    clip-rule="evenodd"></path>
-            </svg>
-        </button>
-        <div class="mobile-menu__container">
-            <ul class="mobile-menu navigation-menu">
-                <li> <a href="./index.html" class="mobile-menu__link ">
-                        Studio</a></li>
-                <li> <a href="./portfolio.html" class="mobile-menu__link mobile-menu__current-page ">
-                        Portfolio</a></li>
-                <li> <a href="#" class="mobile-menu__link ">
-                        Contacts</a></li>
-            </ul>
+
+        <div class="mobile__container">
+            <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg width="24" height="24">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
         </div>
-        <div class="mobile-contact-menu__container">
-            <ul class="mobile-menu mobile-contact ">
-                <li class="mobile-contact__link mobile-contact__link-phone "><a href="mailto:info@example.com">
-                    </a>+1 212-772-4150</li>
-                <li class="mobile-contact__link mobile-contact__link-email"> <a href="tel:12127724150">
-                    </a>info@example.com</li>
-            </ul>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg width="24" height="24">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="mobile-menu__container">
+                <ul class="mobile-menu navigation-menu">
+                    <li> <a href="./index.html" class="mobile-menu__link mobile-menu__current-page">
+                            Studio</a></li>
+                    <li> <a href="./portfolio.html" class="mobile-menu__link ">
+                            Portfolio</a></li>
+                    <li> <a href="#" class="mobile-menu__link ">
+                            Contacts</a></li>
+                </ul>
+            </div>
+            <div class="mobile__contacts">
+                <div class="mobile-contact-menu__container">
+                    <ul class="mobile-menu mobile-contact ">
+                        <li class="mobile-contact__link mobile-contact__link-phone "><a href="mailto:info@example.com">
+                            </a>+1 212-772-4150</li>
+                        <li class="mobile-contact__link mobile-contact__link-email"> <a href="tel:12127724150">
+                            </a>info@example.com</li>
+                    </ul>
+                </div>
+                <div class="mobile-social-menu__container">
+                    <ul class="mobile-media">
+                        <li class="mobile-media__item">
+                            <a href="#" target="_blank" class="mobile-media__link">
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="mobile-media__item">
+                            <a href="#" target="_blank" class="mobile-media__link">
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="mobile-media__item">
+                            <a href="#" target="_blank" class="mobile-media__link">
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="mobile-media__item">
+                            <a href="#" target="_blank" class="mobile-media__link">
+                                LinkedIn
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div class="mobile-social-menu__container">
-            <ul class="mobile-media">
-                <li class="mobile-media__item">
-                    <a href="#" target="_blank" class="mobile-media__link">
-                        Instagram
-                    </a>
-                </li>
-                <li class="mobile-media__item">
-                    <a href="#" target="_blank" class="mobile-media__link">
-                        Twitter
-                    </a>
-                </li>
-                <li class="mobile-media__item">
-                    <a href="#" target="_blank" class="mobile-media__link">
-                        Facebook
-                    </a>
-                </li>
-                <li class="mobile-media__item">
-                    <a href="#" target="_blank" class="mobile-media__link">
-                        LinkedIn
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
 </header>
     <main>
