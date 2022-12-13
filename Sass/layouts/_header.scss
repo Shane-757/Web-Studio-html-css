@@ -116,7 +116,13 @@
 }
 }
 @media screen and (max-width:767px){
-    .header__logo{ margin: 0;}
+    .header__logo{ margin: 0;
+    padding-top: 26px;
+    padding-bottom: 26px;}
+    .menu-toggle.js-open-menu{
+        margin-top: 24px;
+    }
+
 }
     
 
