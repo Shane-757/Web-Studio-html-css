@@ -35,8 +35,8 @@
         padding: 6px 26px;
         border-style: none;
         border-radius: 4px;
-        transition: color variable.$time variable.$time-function,
-        background-color variable.$time variable.$time-function;
+        transition: color variable.$time variable.$time-function;
+        background-color: map-get(variable.$colors, 'image-background');
         &:hover,
         &:focus {
         background-color: map-get(variable.$colors, 'accent-color');
